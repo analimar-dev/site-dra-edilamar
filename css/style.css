@@ -164,7 +164,7 @@
 
     background: #2F5A3D;
 
-    color: #ffffff;
+    color: #C9A04A;
 
     text-decoration: none;
 
@@ -1964,4 +1964,871 @@ body {
     .footer-logo img {
         width: 165px;
     }
+}
+
+/* =========================================================
+   NOVA SEÇÃO — TALVEZ VOCÊ ESTEJA VIVENDO ISSO
+   ========================================================= */
+
+.dores {
+    width: 100%;
+    padding: 100px 0;
+    background: #f8f7f2;
+}
+
+
+/* =========================================================
+   CONTAINER DA SEÇÃO
+   ========================================================= */
+
+.container-dores {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.dores-cabecalho {
+    max-width: 760px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.dores-cabecalho .titulo-pequeno {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: #2F5A3D;
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dores-cabecalho h2 {
+    margin: 0 0 20px;
+
+    color: #234530;
+
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.dores-cabecalho p {
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: #5f5f5f;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GRID DOS 8 CARDS
+   ========================================================= */
+
+.cards-dores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.card-dor {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 280px;
+    padding: 34px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(47, 90, 61, 0.10);
+    border-radius: 24px;
+
+    box-shadow: 0 10px 30px rgba(47, 90, 61, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.card-dor:hover {
+    transform: translateY(-6px);
+
+    border-color: #C9A04A;
+
+    box-shadow: 0 20px 45px rgba(47, 90, 61, 0.13);
+}
+
+
+/* =========================================================
+   NÚMERO
+   ========================================================= */
+
+.card-dor-numero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    margin-bottom: 22px;
+
+    color: #C9A04A;
+    background: rgba(201, 160, 74, 0.10);
+
+    border-radius: 50%;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TÍTULO DO CARD
+   ========================================================= */
+
+.card-dor h3 {
+    margin: 0 0 14px;
+
+    color: #234530;
+
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TEXTO DO CARD
+   ========================================================= */
+
+.card-dor p {
+    margin: 0 0 28px;
+
+    color: #666666;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BOTÃO "QUERO FALAR SOBRE ISSO"
+   ========================================================= */
+
+.botao-dor {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: center;
+
+    margin-top: auto;
+    padding: 12px 22px;
+
+    background: #2F5A3D;
+    color: #C9A04A;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow: 0 8px 18px rgba(47, 90, 61, 0.15);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Hover do botão */
+
+.botao-dor:hover {
+    background: #234530;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 24px rgba(47, 90, 61, 0.20);
+}
+
+
+/* Foco pelo teclado */
+
+.botao-dor:focus-visible {
+    outline: 3px solid #C9A04A;
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   CHAMADA FINAL
+   ========================================================= */
+
+.dores-final {
+    margin-top: 60px;
+
+    text-align: center;
+}
+
+.dores-final p {
+    margin: 0 0 22px;
+
+    color: #234530;
+
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BOTÃO FINAL
+   ========================================================= */
+
+.dores-final .botao {
+    display: inline-flex;
+    color: #C9A04A;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .dores {
+        padding: 80px 0;
+    }
+
+    .container-dores {
+        padding: 0 30px;
+    }
+
+    .dores-cabecalho {
+        margin-bottom: 50px;
+    }
+
+    .dores-cabecalho h2 {
+        font-size: 40px;
+    }
+
+    .cards-dores {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .card-dor {
+        min-height: 290px;
+        padding: 30px;
+    }
+
+    .card-dor h3 {
+        font-size: 23px;
+    }
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .dores {
+        padding: 70px 0;
+    }
+
+    .container-dores {
+        padding: 0 20px;
+    }
+
+    .dores-cabecalho {
+        margin-bottom: 40px;
+    }
+
+    .dores-cabecalho .titulo-pequeno {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .dores-cabecalho h2 {
+        font-size: 34px;
+        line-height: 1.25;
+    }
+
+    .dores-cabecalho p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .cards-dores {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-dor {
+        min-height: auto;
+        padding: 28px;
+        border-radius: 22px;
+    }
+
+    .card-dor h3 {
+        font-size: 22px;
+    }
+
+    .card-dor p {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .botao-dor {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 13px 20px;
+    }
+
+    .dores-final {
+        margin-top: 45px;
+    }
+
+    .dores-final p {
+        font-size: 18px;
+    }
+
+    .dores-final .botao {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* =========================================================
+   CELULAR PEQUENO
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .dores {
+        padding: 60px 0;
+    }
+
+    .container-dores {
+        padding: 0 16px;
+    }
+
+    .dores-cabecalho h2 {
+        font-size: 30px;
+    }
+
+    .dores-cabecalho p {
+        font-size: 16px;
+    }
+
+    .card-dor {
+        padding: 24px;
+    }
+
+    .card-dor h3 {
+        font-size: 21px;
+    }
+
+    .card-dor p {
+        font-size: 15px;
+    }
+
+    .card-dor-numero {
+        width: 34px;
+        height: 34px;
+
+        margin-bottom: 18px;
+
+        font-size: 12px;
+    }
+
+    .dores-final p {
+        font-size: 17px;
+    }
+}
+
+/* Destaque da palavra DORES */
+
+.destaque-dourado {
+    color: #C9A04A;
+}
+
+/* =========================================================
+   BOTÕES FINAIS — ACOLHIMENTO
+   ========================================================= */
+
+.dores-final .botao,
+.dores-final .botao-secundario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+    padding: 15px 34px;
+
+    box-sizing: border-box;
+
+    border-radius: 50px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Botão principal */
+.dores-final .botao {
+    color: #C9A04A;
+}
+
+/* Botão secundário */
+.dores-final .botao-secundario {
+    margin-left: 16px;
+
+    color: #2F5A3D;
+
+    background: transparent;
+
+    border: 2px solid #2F5A3D;
+}
+
+/* Efeito ao passar o mouse */
+.dores-final .botao-secundario:hover {
+    color: #C9A04A;
+
+    background: #2F5A3D;
+
+    border-color: #2F5A3D;
+
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+
+    .dores-final .botao,
+    .dores-final .botao-secundario {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .dores-final .botao-secundario {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+}
+
+.especialidades-botoes {
+    margin-top: 45px;
+}
+
+.especialidades-botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* =========================================================
+   DÚVIDAS FREQUENTES
+   ========================================================= */
+
+.duvidas {
+    width: 100%;
+    background: #f8f7f2;
+    padding: 100px 20px;
+    box-sizing: border-box;
+}
+
+.container-duvidas {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título pequeno */
+
+.duvidas .titulo-pequeno {
+    display: inline-block;
+
+    color: #C9A04A;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+}
+
+/* Título principal */
+
+.duvidas h2 {
+    max-width: 760px;
+    margin: 0 auto 20px;
+
+    color: #234530;
+
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+/* Texto introdutório */
+
+.duvidas-descricao {
+    max-width: 680px;
+    margin: 0 auto 50px;
+
+    color: #5c5c5c;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LISTA DE PERGUNTAS
+   ========================================================= */
+
+.lista-duvidas {
+    max-width: 820px;
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+
+/* Cada pergunta */
+
+.lista-duvidas details {
+    background: #ffffff;
+
+    border: 1px solid rgba(47, 90, 61, 0.12);
+    border-radius: 14px;
+
+    margin-bottom: 14px;
+
+    box-shadow: 0 5px 18px rgba(47, 90, 61, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Pergunta */
+
+.lista-duvidas summary {
+    position: relative;
+
+    padding: 22px 60px 22px 25px;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    color: #234530;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+
+/* Remove marcador padrão */
+
+.lista-duvidas summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* Ícone + */
+
+.lista-duvidas summary::after {
+    content: "+";
+
+    position: absolute;
+
+    right: 25px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #C9A04A;
+
+    font-size: 27px;
+    font-weight: 400;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Quando estiver aberta */
+
+.lista-duvidas details[open] {
+    border-color: rgba(201, 160, 74, 0.45);
+
+    box-shadow: 0 8px 24px rgba(47, 90, 61, 0.10);
+}
+
+
+/* Troca + por − */
+
+.lista-duvidas details[open] summary::after {
+    content: "−";
+}
+
+
+/* Resposta */
+
+.lista-duvidas details p {
+    margin: 0;
+
+    padding: 0 60px 25px 25px;
+
+    color: #5c5c5c;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CHAMADA FINAL
+   ========================================================= */
+
+.duvidas-final {
+    margin-top: 55px;
+
+    text-align: center;
+}
+
+.duvidas-final p {
+    margin-bottom: 20px;
+
+    color: #234530;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* Botão final da FAQ */
+
+.duvidas-final .botao {
+    color: #C9A04A;
+}
+
+
+/* =========================================================
+   EFEITO AO PASSAR O MOUSE
+   ========================================================= */
+
+.lista-duvidas details:hover {
+    border-color: rgba(201, 160, 74, 0.35);
+
+    box-shadow: 0 8px 24px rgba(47, 90, 61, 0.10);
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .duvidas {
+        padding: 75px 18px;
+    }
+
+    .duvidas h2 {
+        font-size: 32px;
+    }
+
+    .duvidas-descricao {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .lista-duvidas summary {
+        padding: 20px 50px 20px 20px;
+
+        font-size: 16px;
+    }
+
+    .lista-duvidas summary::after {
+        right: 20px;
+    }
+
+    .lista-duvidas details p {
+        padding: 0 20px 22px;
+
+        font-size: 15px;
+    }
+
+    .duvidas-final {
+        margin-top: 40px;
+    }
+
+}
+
+/* =========================================================
+   AJUSTE DEFINITIVO DO CABEÇALHO - DESKTOP
+   ========================================================= */
+
+@media (min-width: 993px) {
+
+    .cabecalho .container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        padding: 12px 28px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Logo */
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        width: 205px;
+    }
+
+    /* Menu */
+    .menu {
+        margin-left: 15px;
+        margin-right: 15px;
+
+        flex: 1;
+        min-width: 0;
+    }
+
+    .menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 18px;
+
+        flex-wrap: nowrap;
+    }
+
+    .menu a {
+        font-size: 14px;
+
+        white-space: nowrap;
+    }
+
+    /* Botão Agendar Consulta */
+    .cabecalho .botao {
+        flex-shrink: 0;
+
+        padding: 12px 20px;
+
+        font-size: 14px;
+
+        white-space: nowrap;
+
+        width: auto;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   PADRÃO DOS LINKS SECUNDÁRIOS DO SITE
+   ========================================================= */
+
+.botao-secundario,
+.palestras-botoes .botao-secundario,
+.dores-final .botao-secundario {
+    display: inline-block;
+
+    padding: 0 0 6px;
+
+    color: #2F5A3D;
+    background: transparent;
+
+    border: none;
+    border-bottom: 2px solid #C9A04A;
+    border-radius: 0;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Quando passar o mouse */
+.botao-secundario:hover,
+.palestras-botoes .botao-secundario:hover,
+.dores-final .botao-secundario:hover {
+    color: #C9A04A;
+    background: transparent;
+    border-bottom-color: #C9A04A;
+}
+
+/* CENTRALIZA OS BOTÕES DA ÁREA DE PALESTRAS */
+.palestras-botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
 }
