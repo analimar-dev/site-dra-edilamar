@@ -1608,21 +1608,19 @@ body {
 /* ========================================================= */
 
 .footer-credit {
-    text-align: right;
+    text-align: center;
+    font-size: 14px;
 }
-
 
 .footer-credit a {
-    color: #C9A04A;
-
-    font-weight: 700;
-
+    color: #D4AF37;
+    font-weight: 800;
     text-decoration: none;
-
+    margin-left: 4px;
     transition:
-        color .25s ease;
+        color .25s ease,
+        transform .25s ease;
 }
-
 
 .footer-credit a:hover {
     color: #ffffff;
@@ -2831,4 +2829,543 @@ body {
     align-items: center;
     gap: 24px;
     width: 100%;
+}
+
+/* =========================================================
+   SEU CUIDADO COMEÇA AQUI
+   ========================================================= */
+
+.cuidado {
+    width: 100%;
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.container-cuidado {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.cuidado-cabecalho {
+    max-width: 760px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.cuidado-cabecalho .titulo-pequeno {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: #2F5A3D;
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cuidado-cabecalho h2 {
+    margin: 0 0 20px;
+
+    color: #234530;
+
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.cuidado-cabecalho p {
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: #5f5f5f;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.cards-cuidado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+
+/* =========================================================
+   CARD INDIVIDUAL — CLICÁVEL
+   ========================================================= */
+
+.card-cuidado {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 300px;
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(47, 90, 61, 0.10);
+    border-radius: 24px;
+
+    text-decoration: none;
+    color: inherit;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 30px rgba(47, 90, 61, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   HOVER DOS CARDS
+   ========================================================= */
+
+.card-cuidado:hover {
+    transform: translateY(-6px);
+
+    border-color: #C9A04A;
+
+    box-shadow: 0 20px 45px rgba(47, 90, 61, 0.13);
+}
+
+
+/* =========================================================
+   NÚMERO
+   ========================================================= */
+
+.card-cuidado-numero {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    margin-bottom: 22px;
+
+    color: #C9A04A;
+    background: rgba(201, 160, 74, 0.10);
+
+    border-radius: 50%;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TÍTULO DO CARD
+   ========================================================= */
+
+.card-cuidado h3 {
+    margin: 0 0 14px;
+
+    color: #234530;
+
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TEXTO DO CARD
+   ========================================================= */
+
+.card-cuidado p {
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FRASE FINAL
+   ========================================================= */
+
+.cuidado-final {
+    max-width: 850px;
+    margin: 60px auto 0;
+
+    text-align: center;
+}
+
+.cuidado-final p {
+    margin: 0 0 28px;
+
+    color: #234530;
+
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BOTÕES
+   ========================================================= */
+
+.cuidado-botoes {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+
+    width: 100%;
+}
+
+.cuidado-botoes .botao-secundario {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+   ========================================================= */
+
+.card-cuidado:focus-visible,
+.cuidado-botoes a:focus-visible {
+    outline: 3px solid #C9A04A;
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   TABLET — ATÉ 992px
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .cards-cuidado {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR — ATÉ 768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .cuidado {
+        padding: 70px 0;
+    }
+
+    .container-cuidado {
+        padding: 0 20px;
+    }
+
+    .cuidado-cabecalho {
+        margin-bottom: 40px;
+    }
+
+    .cuidado-cabecalho h2 {
+        font-size: 34px;
+    }
+
+    .cuidado-cabecalho p {
+        font-size: 17px;
+    }
+
+    .cards-cuidado {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-cuidado {
+        min-height: auto;
+        padding: 28px;
+    }
+
+    .card-cuidado h3 {
+        font-size: 21px;
+    }
+
+    .cuidado-final {
+        margin-top: 45px;
+    }
+
+    .cuidado-final p {
+        font-size: 18px;
+    }
+
+    .cuidado-botoes {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .cuidado-botoes .botao,
+    .cuidado-botoes .botao-secundario {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR PEQUENO — ATÉ 480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .cuidado {
+        padding: 60px 0;
+    }
+
+    .container-cuidado {
+        padding: 0 16px;
+    }
+
+    .cuidado-cabecalho .titulo-pequeno {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .cuidado-cabecalho h2 {
+        font-size: 30px;
+    }
+
+    .cuidado-cabecalho p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .card-cuidado {
+        padding: 25px;
+    }
+
+    .card-cuidado h3 {
+        font-size: 20px;
+    }
+
+    .card-cuidado p {
+        font-size: 15px;
+    }
+
+    .cuidado-final p {
+        font-size: 17px;
+    }
+
+}
+
+
+/* ========================================= */
+/* BOTÃO FLUTUANTE WHATSAPP                  */
+/* ========================================= */
+
+.whatsapp-flutuante {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #25D366;
+    color: #ffffff;
+
+    border: 3px solid #D4AF37;
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18),
+        0 0 0 4px rgba(255, 255, 255, 0.85);
+
+    z-index: 1000;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+
+/* ÍCONE DO WHATSAPP */
+
+.whatsapp-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+}
+
+.whatsapp-icone svg {
+    width: 29px;
+    height: 29px;
+
+    display: block;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.whatsapp-flutuante:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    background-color: #20bd5a;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.22),
+        0 0 0 5px rgba(212, 175, 55, 0.18);
+}
+
+
+/* ACESSIBILIDADE */
+
+.whatsapp-flutuante:focus-visible {
+    outline: 3px solid #D4AF37;
+    outline-offset: 4px;
+}
+
+
+/* ========================================= */
+/* RESPONSIVIDADE                             */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    .whatsapp-flutuante {
+        width: 58px;
+        height: 58px;
+
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .whatsapp-icone svg {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+
+/* ========================================= */
+/* MENU HAMBÚRGUER                            */
+/* ========================================= */
+
+.menu-mobile {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+    color: #1f4d36;
+
+    cursor: pointer;
+
+    padding: 6px;
+}
+
+
+/* ========================================= */
+/* VERSÃO PARA CELULAR                        */
+/* ========================================= */
+
+
+@media (max-width: 768px) {
+
+    .menu-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #d4af37;
+        border-radius: 10px;
+        background: #ffffff;
+        color: #1f4d36;
+        font-size: 26px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        padding: 20px 0 25px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+        z-index: 1000;
+    }
+
+    .menu.ativo {
+        display: block;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 8px 20px;
+        color: #1f4d36;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .menu a:hover {
+        background: #f8f5ec;
+        color: #b28a22;
+    }
 }

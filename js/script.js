@@ -1,9 +1,12 @@
-const menu = document.querySelector(".menu");
+document.addEventListener("DOMContentLoaded", () => {
 
-const botao = document.querySelector(".menu-mobile");
+    const menu = document.querySelector(".menu");
+    const botao = document.querySelector(".menu-mobile");
 
-botao.addEventListener("click", () => {
+    botao.addEventListener("click", () => {
 
-    menu.classList.toggle("ativo");
+        menu.classList.toggle("ativo");
+
+    });
 
 });
