@@ -3369,3 +3369,186 @@ body {
         color: #b28a22;
     }
 }
+
+/* LINKS LEGAIS DO RODAPÉ */
+
+.footer-bottom p a {
+    color: #C9A04A;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom p a:hover {
+    color: #ffffff;
+}
+
+/* =========================================
+   ÍCONE DO MENU — HAMBÚRGUER / X
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .cabecalho:has(.menu.ativo) .menu-mobile {
+        font-size: 0;
+    }
+
+    .cabecalho:has(.menu.ativo) .menu-mobile::before {
+        content: "×";
+        font-size: 30px;
+        line-height: 1;
+    }
+
+}
+
+/* FRASE-CONCEITO DO BANNER */
+
+.frase-banner {
+    margin-top: 22px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    color: #285c43;
+}
+
+.frase-banner span {
+    color: #285c43;
+}
+
+.frase-banner b {
+    color: #c9a04a;
+    margin: 0 8px;
+    font-weight: 600;
+}
+
+/* =========================================
+   PÁGINAS LEGAIS
+   ========================================= */
+
+.pagina-legal {
+    min-height: 100vh;
+    background-color: #f8f7f2;
+    padding: 80px 20px;
+}
+
+.container-legal {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.voltar-site {
+    display: inline-block;
+    margin-bottom: 40px;
+    color: #285c43;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.voltar-site:hover {
+    color: #c9a04a;
+}
+
+.titulo-pequeno {
+    display: block;
+    margin-bottom: 12px;
+    color: #c9a04a;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.container-legal h1 {
+    margin-bottom: 25px;
+    color: #1f4d38;
+    font-size: 2.5rem;
+}
+
+.introducao-legal {
+    margin-bottom: 45px;
+    color: #555555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.container-legal section {
+    margin-bottom: 35px;
+}
+
+.container-legal h2 {
+    margin-bottom: 15px;
+    color: #285c43;
+    font-size: 1.35rem;
+}
+
+.container-legal p {
+    margin-bottom: 15px;
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.atualizacao-legal {
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e1d5;
+    color: #777777 !important;
+    font-size: 0.9rem !important;
+}
+
+.container-legal .botao {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE — PÁGINAS LEGAIS
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .pagina-legal {
+        padding: 40px 15px;
+    }
+
+    .container-legal {
+        padding: 35px 25px;
+    }
+
+    .container-legal h1 {
+        font-size: 2rem;
+    }
+
+    .container-legal h2 {
+        font-size: 1.2rem;
+    }
+
+    .container-legal p {
+        font-size: 0.95rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .pagina-legal {
+        padding: 25px 12px;
+    }
+
+    .container-legal {
+        padding: 30px 20px;
+    }
+
+    .container-legal h1 {
+        font-size: 1.7rem;
+    }
+
+    .voltar-site {
+        margin-bottom: 30px;
+    }
+}
