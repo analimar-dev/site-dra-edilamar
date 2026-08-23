@@ -380,7 +380,7 @@ body {
 
     line-height: 1.8;
 
-    color: #555555;
+    color: #234530;
 
     margin-bottom: 40px;
 
@@ -3553,48 +3553,336 @@ body {
     }
 }
 
-/* CABEÇALHO - AJUSTE ESPECÍFICO PARA IPAD */
+/* ==========================================
+   CABEÇALHO - TABLET
+   769px ATÉ 1100px
+   ========================================== */
+
 @media (min-width: 769px) and (max-width: 1100px) {
 
     .cabecalho .container {
+        width: 100%;
         max-width: 100%;
-        padding: 10px 16px;
-        gap: 10px;
+        padding: 10px 12px;
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 
     .logo {
-        flex-shrink: 1;
+        flex-shrink: 0;
     }
 
     .logo img {
-        width: 165px;
-        max-width: 165px;
+        width: 145px;
+        max-width: 145px;
     }
 
     .menu {
-        margin-left: auto;
-        margin-right: 5px;
         flex: 1;
         min-width: 0;
+        margin: 0;
     }
 
     .menu ul {
         display: flex;
         align-items: center;
+        justify-content: center;
+        gap: 9px;
         list-style: none;
-        gap: 16px;
+        margin: 0;
+        padding: 0;
+        flex-wrap: nowrap;
     }
 
     .menu a {
-        font-size: 11px;
+        font-size: 9px;
         letter-spacing: 0;
         white-space: nowrap;
     }
 
     .botao-agendar {
         flex-shrink: 0;
-        padding: 9px 12px;
-        font-size: 11px;
+        padding: 9px 11px;
+        font-size: 9px;
         white-space: nowrap;
     }
+}
+
+
+
+
+
+.botao-agendar {
+    flex-shrink: 0;
+    padding: 8px 10px;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+}
+
+
+.logo img {
+    width: 165px;
+    max-width: 165px;
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: 5px;
+    flex: 1;
+    min-width: 0;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 16px;
+}
+
+.menu a {
+    font-size: 11px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.botao-agendar {
+    flex-shrink: 0;
+    padding: 9px 12px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+}
+
+
+
+/* ========================================= */
+/* SEÇÃO: RECEBA SEU PRESENTE                */
+/* ========================================= */
+
+.presente {
+
+    padding: 100px 0;
+    background: #f8f7f2;
+
+}
+
+
+/* CONTAINER */
+
+.container-presente {
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: center;
+
+}
+
+
+/* TÍTULO PEQUENO */
+
+.presente .titulo-pequeno {
+
+    color: #2F5A3D;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+.presente h2 {
+
+    color: #234530;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 25px 0;
+
+}
+
+
+/* TEXTO */
+
+.presente>.container-presente>p {
+
+    max-width: 720px;
+    margin: 0 auto 45px;
+
+    color: #5f5f5f;
+    font-size: 18px;
+    line-height: 1.8;
+
+}
+
+
+/* FORMULÁRIO */
+
+.formulario-presente {
+
+    background: #ffffff;
+
+    padding: 45px;
+
+    border-radius: 28px;
+
+    box-shadow: 0 15px 35px rgba(47, 90, 61, .10);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+/* CAMPOS */
+
+.campo-formulario {
+
+    text-align: left;
+
+}
+
+
+.campo-formulario label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #234530;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+}
+
+
+/* INPUTS */
+
+.campo-formulario input,
+.campo-formulario select {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    color: #234530;
+
+    outline: none;
+
+    transition: .3s;
+
+}
+
+
+.campo-formulario input:focus,
+.campo-formulario select:focus {
+
+    border-color: #C9A04A;
+
+    box-shadow: 0 0 0 3px rgba(201, 160, 74, .15);
+
+}
+
+
+/* BOTÃO */
+
+.formulario-presente .botao {
+
+    border: none;
+
+    cursor: pointer;
+
+    width: fit-content;
+
+    margin: 10px auto 0;
+
+}
+
+
+/* MENSAGEM FINAL */
+
+.mensagem-cuidado {
+
+    margin-top: 30px !important;
+
+    color: #2F5A3D !important;
+
+    font-size: 16px !important;
+
+    font-weight: 600;
+
+}
+
+
+/* ========================================= */
+/* RESPONSIVO - SEÇÃO PRESENTE              */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    .presente {
+        padding: 60px 0;
+    }
+
+    .container-presente {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .presente h2 {
+        font-size: 28px;
+        line-height: 1.25;
+        margin-bottom: 20px;
+    }
+
+    .presente p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .formulario-presente {
+        width: 100%;
+        padding: 28px 20px;
+        box-sizing: border-box;
+    }
+
+    .campo-formulario {
+        width: 100%;
+    }
+
+    .campo-formulario input,
+    .campo-formulario select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 280px;
+        margin: 20px auto 0;
+    }
+
+    .mensagem-cuidado {
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
 }
