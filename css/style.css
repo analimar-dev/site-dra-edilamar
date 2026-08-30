@@ -3610,6 +3610,54 @@ body {
     }
 }
 
+/* =========================================================
+   AJUSTE DO CABEÇALHO MOBILE
+   Logo + Hambúrguer na mesma linha
+   Botão Agendar Consulta abaixo
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .cabecalho .container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 12px 15px;
+        padding: 12px 15px;
+    }
+
+    /* Logo */
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+    }
+
+    .logo img {
+        width: 190px;
+        max-width: 100%;
+    }
+
+    /* Hambúrguer */
+    .menu-mobile {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    /* Botão Agendar Consulta */
+    .cabecalho .botao {
+        grid-column: 1 / -1;
+        grid-row: 2;
+
+        justify-self: center;
+
+        width: 100%;
+        max-width: 280px;
+    }
+
+}
+
 
 
 
